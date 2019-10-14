@@ -50,6 +50,10 @@ section{
     max-height: 50px;
     /* animation: spin 30s linear infinite; */
 }
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -59,11 +63,13 @@ section{
     
     right:-800px;
     bottom: -800px;
+    -webkit-animation: spin 480s linear infinite;
     animation: spin 480s linear infinite;
 }
-#back2{
+#back480{
     position: fixed;
     top:-800px;
     left:-800px;
+    -webkit-animation: spin 480s linear infinite;
     animation: spin 480s linear infinite;
 }
