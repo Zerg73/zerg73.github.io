@@ -42,14 +42,6 @@ section{
     user-select: none;
 }
 
-#menu{
-    position:fixed;
-    right:1%;
-    top:2%;
-    max-width: 50px;
-    max-height: 50px;
-    /* animation: spin 30s linear infinite; */
-}
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -58,6 +50,15 @@ section{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+#menu{
+    position:fixed;
+    right:1%;
+    top:2%;
+    max-width: 50px;
+    max-height: 50px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
 #back1{
     position: fixed;
     
@@ -66,7 +67,7 @@ section{
     -webkit-animation: spin 480s linear infinite;
     animation: spin 480s linear infinite;
 }
-#back480{
+#back2{
     position: fixed;
     top:-800px;
     left:-800px;
