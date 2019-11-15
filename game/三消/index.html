@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 三消</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>三消游戏Demo | 白白可乐</title>
+    <!-- <link rel="shortcut icon" href="TemplateData/favicon.ico"> -->
+    <link rel="shortcut icon" href="../../images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
@@ -13,12 +14,19 @@
     </script>
   </head>
   <body>
+      <div class="header" style="background-color:rgba(66,66,66,66);padding: 15px">
+          <h1 id="wordlogo">
+              <a href="../../index.html" style="color:white;text-decoration:none;">
+                  白白可乐
+              </a>
+              </h2>
+      </div>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">三消</div>
+        <div class="title">三消游戏Demo | 白白可乐</div>
       </div>
     </div>
   </body>
